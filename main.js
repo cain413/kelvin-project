@@ -1,10 +1,15 @@
 // kelvin is a constant variable set at 293
 const kelvin = 293;
-// celcius is a constant that is a result of subtracting 273 from kelvin
-const celcius = kelvin - 293;
-// faherheit is stored in reassignable variable and is the result of celius multiplied by the sum of 9/5 + 32 
-let Fahrenheit = celcius * (9/5) + 32;
-// Using fahrenheit variable and rounding it down 
-Fahrenheit = Math.floor(fahrenheit);
 
-console.log('The temperature is ${fahrenheit} degrees Fahrenheit');
+// celcius is kelvin - 273
+const celsius = kelvin - 273;
+
+// formula for celsius to fahrenheit
+// round results down to the nearest whole number
+const fahrenheit = Math.floor(celsius * (9/5) + 32);
+
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
+
+const newton = Math.floor(celsius * (33/100));
+
+console.log(`The temperature is ${newton} degrees Newton.`);
